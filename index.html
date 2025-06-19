@@ -367,15 +367,19 @@
       Advertisement
     </div>
 
-    <div class="email-signup">
-      <h3>Stay Ahead</h3>
-      <p>Get weekly finance tips, investing hacks, and side hustle ideas delivered to your inbox.</p>
-      <form>
-        <input type="email" placeholder="Enter your email" required />
-        <button type="submit">Join Free</button>
-      </form>
-    </div>
+<div class="email-signup">
+  <h3>Stay Ahead</h3>
+  <p>Get weekly finance tips, investing hacks, and side hustle ideas delivered to your inbox.</p>
+  <form action="https://formsubmit.co/salimmalali11@example.com" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required />
+    
+    <!-- Optional hidden inputs -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
 
+    <button type="submit">Join Free</button>
+  </form>
+</div>
   </div>
 
   <script>
