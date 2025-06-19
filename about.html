@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About WealthFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --text: #1f2937;
+      --accent: #2563eb;
+      --highlight: #3b82f6;
+      --gray: #6b7280;
+      --radius: 12px;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      max-width: 740px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 1rem;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: var(--highlight);
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      padding-top: 100px;
+    }
+
+    .about-image {
+      width: 100%;
+      border-radius: var(--radius);
+      margin-bottom: 24px;
+      object-fit: cover;
+      max-height: 300px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--accent);
+      margin-bottom: 24px;
+      user-select: none;
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: var(--text);
+      user-select: none;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        margin: 20px 15px 40px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="logo">WealthFlow</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog-overview.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <img src="images/image10.jpg" alt="About WealthFlow" class="about-image" />
+    <h1>About WealthFlow</h1>
+    <p>Welcome to WealthFlow — your trusted source for smart, actionable finance insights. Our mission is to empower individuals to take control of their financial future through clear, practical advice and up-to-date market trends.</p>
+    <p>Whether you’re just starting your financial journey or looking to refine your investment strategy, WealthFlow offers guidance that’s easy to understand and implement. From budgeting and saving tips to in-depth investing strategies, we cover the essentials you need to build lasting wealth.</p>
+    <p>Our content is crafted by finance professionals passionate about helping you navigate today’s fast-changing economic landscape. We believe everyone deserves access to quality financial knowledge without the jargon or confusion.</p>
+    <p>Thank you for joining us. Together, let’s build a smarter, wealthier future.</p>
+  </main>
+
+</body>
+</html>

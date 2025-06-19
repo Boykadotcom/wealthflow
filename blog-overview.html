@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - WealthFlow Finance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --text: #1f2937;
+      --accent: #2563eb;
+      --highlight: #3b82f6;
+      --gray: #6b7280;
+      --radius: 12px;
+      --white: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      overflow-x: hidden;
+      max-width: 740px;
+      margin: 100px auto 60px;
+      padding: 0 20px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -1px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 1rem;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: var(--highlight);
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    .post {
+      background: var(--white);
+      padding: 28px;
+      border-radius: var(--radius);
+      margin-bottom: 40px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .post:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.06);
+    }
+    .post-image {
+      width: 100%;
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+      object-fit: cover;
+      max-height: 240px;
+    }
+    .post h2 {
+      font-size: 1.75rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    .post h2 a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+    }
+    .post h2 a:hover {
+      text-decoration: underline;
+    }
+    .post p {
+      font-size: 1.05rem;
+      color: var(--gray);
+      font-weight: 500;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      body {
+        margin-top: 140px;
+      }
+      .post h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="logo">WealthFlow</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog-overview.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="post" onclick="window.location.href='post1.html'">
+      <img src="images/image1.jpg" alt="Side Hustles" class="post-image" />
+      <h2><a href="post1.html">5 Side Hustles You Can Start This Weekend</a></h2>
+      <p>Tired of living paycheck to paycheck? Discover practical side hustles that can boost your income fast — no experience needed.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post2.html'">
+      <img src="images/image2.jpg" alt="Investing Guide" class="post-image" />
+      <h2><a href="post2.html">Beginner’s Guide to Investing in 2025</a></h2>
+      <p>New to investing? Learn simple, effective strategies to grow your money safely this year with easy-to-follow tips.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post3.html'">
+      <img src="images/image3.jpg" alt="Budgeting Tips" class="post-image" />
+      <h2><a href="post3.html">Smart Budgeting: Take Control of Your Money Today</a></h2>
+      <p>Struggling to save? Master budgeting techniques that work, helping you reduce debt and build your financial foundation.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post4.html'">
+      <img src="images/image4.jpg" alt="Retirement Planning" class="post-image" />
+      <h2><a href="post4.html">Retirement Planning Strategies That Work in 2025 and Beyond</a></h2>
+      <p>Secure your future with tested retirement plans and investment tips designed for today’s economic realities.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post5.html'">
+      <img src="images/image5.jpg" alt="Emergency Fund" class="post-image" />
+      <h2><a href="post5.html">How to Build an Emergency Fund Fast: A Step-by-Step Guide</a></h2>
+      <p>Unexpected expenses? Learn how to create a financial safety net quickly and avoid debt traps.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post6.html'">
+      <img src="images/image6.jpg" alt="Credit Scores" class="post-image" />
+      <h2><a href="post6.html">Understanding Credit Scores: What You Need to Know</a></h2>
+      <p>Your credit score impacts your life more than you think — get the facts and tips to improve it starting now.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post7.html'">
+      <img src="images/image7.jpg" alt="Passive Income" class="post-image" />
+      <h2><a href="post7.html">Passive Income Ideas: Make Money While You Sleep</a></h2>
+      <p>Explore smart passive income streams to grow your wealth without trading time for money.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post8.html'">
+  <img src="images/image9.jpg" alt="Smart Investing" class="post-image" />
+  <h2><a href="post8.html">Smart Investing Tips for Long-Term Wealth Building</a></h2>
+  <p>Invest like a pro with essential tips focused on sustainable growth and risk management.</p>
+</div>
+  </main>
+
+  <script>
+    const header = document.getElementById('site-header');
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY && window.scrollY > 100) {
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        header.style.transform = 'translateY(0)';
+      }
+      lastScrollY = window.scrollY;
+    });
+  </script>
+
+</body>
+</html>
