@@ -74,6 +74,26 @@
     nav a:hover::after {
       width: 100%;
     }
+    main {
+      margin-top: 20px;
+    }
+    h1.page-title {
+      font-size: 2.8rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      color: var(--accent);
+      text-align: center;
+    }
+    p.page-description {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--gray);
+      text-align: center;
+      margin-bottom: 48px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .post {
       background: var(--white);
       padding: 28px;
@@ -98,7 +118,7 @@
     .post h2 {
       font-size: 1.75rem;
       color: var(--accent);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       font-weight: 800;
     }
     .post h2 a {
@@ -110,9 +130,10 @@
       text-decoration: underline;
     }
     .post p {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       color: var(--gray);
       font-weight: 500;
+      line-height: 1.5;
     }
     @media (max-width: 768px) {
       header {
@@ -147,98 +168,70 @@
   </header>
 
   <main>
-    <div class="post" onclick="window.location.href='post1.html'">
-      <img src="images/image1.jpg" alt="Side Hustles" class="post-image" />
+    <h1 class="page-title">Explore Our Latest Finance Insights</h1>
+    <p class="page-description">
+      Dive into a wide range of finance topics — from smart investing and budgeting to credit management and passive income ideas. Each post is designed to help you take control of your money and build lasting wealth.
+    </p>
+
+    <div class="post" onclick="window.location.href='post1.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post1.html'; }">
+      <img src="images/image1.jpg" alt="Side Hustles ideas" class="post-image" />
       <h2><a href="post1.html">5 Side Hustles You Can Start This Weekend</a></h2>
-      <p>Tired of living paycheck to paycheck? Discover practical side hustles that can boost your income fast — no experience needed.</p>
+      <p>Tired of living paycheck to paycheck? Discover practical and easy-to-start side hustles that require little to no experience but can significantly boost your income quickly.</p>
     </div>
 
-    <div class="post" onclick="window.location.href='post2.html'">
+    <div class="post" onclick="window.location.href='post2.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post2.html'; }">
       <img src="images/image2.jpg" alt="Investing Guide" class="post-image" />
       <h2><a href="post2.html">Beginner’s Guide to Investing in 2025</a></h2>
-      <p>New to investing? Learn simple, effective strategies to grow your money safely this year with easy-to-follow tips.</p>
+      <p>New to investing? Learn simple, effective strategies to safely grow your money with practical tips tailored for the current market environment.</p>
     </div>
 
-    <div class="post" onclick="window.location.href='post3.html'">
-      <img src="images/image3.jpg" alt="Budgeting Tips" class="post-image" />
+    <div class="post" onclick="window.location.href='post3.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post3.html'; }">
+      <img src="images/image3.jpg" alt="Budgeting tips" class="post-image" />
       <h2><a href="post3.html">Smart Budgeting: Take Control of Your Money Today</a></h2>
-      <p>Struggling to save? Master budgeting techniques that work, helping you reduce debt and build your financial foundation.</p>
+      <p>Struggling to save? Master proven budgeting techniques that help you reduce debt and build a solid financial foundation for your future.</p>
     </div>
 
-    <div class="post" onclick="window.location.href='post4.html'">
-      <img src="images/image4.jpg" alt="Retirement Planning" class="post-image" />
+    <div class="post" onclick="window.location.href='post4.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post4.html'; }">
+      <img src="images/image4.jpg" alt="Retirement planning" class="post-image" />
       <h2><a href="post4.html">Retirement Planning Strategies That Work in 2025 and Beyond</a></h2>
-      <p>Secure your future with tested retirement plans and investment tips designed for today’s economic realities.</p>
+      <p>Secure your financial future with tested retirement plans and investment tips designed to work in today’s fast-changing economic landscape.</p>
     </div>
 
-    <div class="post" onclick="window.location.href='post5.html'">
-      <img src="images/image5.jpg" alt="Emergency Fund" class="post-image" />
+    <div class="post" onclick="window.location.href='post5.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post5.html'; }">
+      <img src="images/image5.jpg" alt="Emergency fund" class="post-image" />
       <h2><a href="post5.html">How to Build an Emergency Fund Fast: A Step-by-Step Guide</a></h2>
-      <p>Unexpected expenses? Learn how to create a financial safety net quickly and avoid debt traps.</p>
+      <p>Unexpected expenses can derail your finances. Learn how to quickly build a financial safety net and avoid costly debt traps.</p>
     </div>
 
-    <div class="post" onclick="window.location.href='post6.html'">
-      <img src="images/image6.jpg" alt="Credit Scores" class="post-image" />
+    <div class="post" onclick="window.location.href='post6.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post6.html'; }">
+      <img src="images/image6.jpg" alt="Credit scores" class="post-image" />
       <h2><a href="post6.html">Understanding Credit Scores: What You Need to Know</a></h2>
-      <p>Your credit score impacts your life more than you think — get the facts and tips to improve it starting now.</p>
+      <p>Your credit score affects everything from loans to housing. Get the facts and practical tips to improve and maintain a strong credit profile.</p>
     </div>
 
-    <div class="post" onclick="window.location.href='post7.html'">
-      <img src="images/image7.jpg" alt="Passive Income" class="post-image" />
+    <div class="post" onclick="window.location.href='post7.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post7.html'; }">
+      <img src="images/image7.jpg" alt="Passive income ideas" class="post-image" />
       <h2><a href="post7.html">Passive Income Ideas: Make Money While You Sleep</a></h2>
-      <p>Explore smart passive income streams to grow your wealth without trading time for money.</p>
+      <p>Discover smart passive income streams that can grow your wealth without trading time for money, freeing you to focus on what matters.</p>
     </div>
 
-    <div class="post" onclick="window.location.href='post8.html'">
-      <img src="images/image9.jpg" alt="Smart Investing" class="post-image" />
+    <div class="post" onclick="window.location.href='post8.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post8.html'; }">
+      <img src="images/image9.jpg" alt="Smart investing tips" class="post-image" />
       <h2><a href="post8.html">Smart Investing Tips for Long-Term Wealth Building</a></h2>
-      <p>Invest like a pro with essential tips focused on sustainable growth and risk management.</p>
+      <p>Learn how to invest wisely with essential strategies focused on sustainable growth and risk management for your long-term financial success.</p>
     </div>
 
-    <!-- New posts added below -->
-
-    <div class="post" onclick="window.location.href='post9.html'">
-      <img src="images/image11.jpg" alt="Volatile Market Investing" class="post-image" />
+    <div class="post" onclick="window.location.href='post9.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post9.html'; }">
+      <img src="images/image11.jpg" alt="Volatile market investing" class="post-image" />
       <h2><a href="post9.html">Smart Investing Tips for a Volatile Market</a></h2>
-      <p>Market ups and downs? Learn strategies to stay calm and grow your wealth through volatility.</p>
+      <p>Market ups and downs can be stressful. Discover strategies to stay calm, protect your investments, and grow your wealth through volatility.</p>
     </div>
 
-    <div class="post" onclick="window.location.href='post10.html'">
-      <img src="images/image12.jpg" alt="Budget Planning" class="post-image" />
+    <div class="post" onclick="window.location.href='post10.html'" role="link" tabindex="0" onkeypress="if(event.key === 'Enter'){ window.location.href='post10.html'; }">
+      <img src="images/image12.jpg" alt="Budget planning" class="post-image" />
       <h2><a href="post10.html">Master Your Budget: Practical Tips for Financial Control</a></h2>
-      <p>Take charge of your finances with easy budgeting techniques that bring clarity and control.</p>
+      <p>Take charge of your finances with easy-to-follow budgeting techniques that provide clarity and control over your money.</p>
     </div>
-
-    <div class="post" onclick="window.location.href='post11.html'">
-      <img src="images/image13.jpg" alt="Tax Planning" class="post-image" />
-      <h2><a href="post11.html">Essential Tax Tips Every Investor Should Know</a></h2>
-      <p>Keep more of your gains with smart tax strategies tailored for investors.</p>
-    </div>
-
-    <div class="post" onclick="window.location.href='post12.html'">
-      <img src="images/image14.jpg" alt="Passive Income Growth" class="post-image" />
-      <h2><a href="post12.html">How to Build Passive Income Streams in 2025</a></h2>
-      <p>Create multiple income streams that earn money while you focus on life.</p>
-    </div>
-
-    <div class="post" onclick="window.location.href='post13.html'">
-      <img src="images/image15.jpg" alt="CFA Exam Study" class="post-image" />
-      <h2><a href="post13.html">CFA Exam Preparation: Tips and Resources to Pass</a></h2>
-      <p>Get ready to ace the CFA exams with focused strategies and study resources.</p>
-    </div>
-
-    <div class="post" onclick="window.location.href='post14.html'">
-      <img src="images/image16.jpg" alt="Cryptocurrency" class="post-image" />
-      <h2><a href="post14.html">Understanding Cryptocurrency Risks and Rewards</a></h2>
-      <p>Explore the highs and lows of crypto investing with a balanced, informed view.</p>
-    </div>
-
-    <div class="post" onclick="window.location.href='post15.html'">
-      <img src="images/image17.jpg" alt="Credit Score Improvement" class="post-image" />
-      <h2><a href="post15.html">How to Improve Your Credit Score Fast</a></h2>
-      <p>Boost your credit score quickly with practical tips and smart financial habits.</p>
-    </div>
-
   </main>
 
   <script>
