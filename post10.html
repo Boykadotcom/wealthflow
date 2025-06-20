@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Master Your Budget: Practical Tips for Financial Control - WealthFlow Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maximizing Tax Efficiency: Smart Strategies for Investors in 2025 - WealthFlow</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    /* Styles same as previous posts */
     :root {
       --bg: #f9fafb;
       --text: #1f2937;
@@ -16,15 +15,19 @@
       --radius: 12px;
       --white: #ffffff;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
       font-family: 'Manrope', sans-serif;
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.8;
-      padding: 40px 20px;
       max-width: 740px;
-      margin: auto;
+      margin: 100px auto 60px;
+      padding: 0 20px;
     }
     a {
       color: var(--highlight);
@@ -34,91 +37,158 @@
     a:hover {
       text-decoration: underline;
     }
-    .back-link {
-      display: inline-block;
-      margin-bottom: 30px;
-      font-size: 1rem;
-      color: var(--highlight);
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
     }
-    h1 {
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -1px;
+    }
+    nav a {
+      margin-left: 24px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--highlight);
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    main h1 {
       font-size: 2.8rem;
       font-weight: 900;
       color: var(--accent);
+      margin: 24px 0 16px;
+    }
+    main img {
+      width: 100%;
+      border-radius: var(--radius);
       margin-bottom: 24px;
+      object-fit: cover;
+      max-height: 320px;
     }
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 800;
-      margin-top: 32px;
-      margin-bottom: 16px;
+      margin: 32px 0 12px;
       color: var(--accent);
     }
     p {
       font-size: 1.1rem;
       font-weight: 500;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       color: var(--text);
     }
     ul {
-      margin: 20px 0;
-      padding-left: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
     li {
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       font-size: 1.1rem;
-      font-weight: 500;
       color: var(--text);
     }
-    .post-image {
-      width: 100%;
-      border-radius: var(--radius);
-      margin: 24px 0;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      object-fit: cover;
-      max-height: 350px;
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin: 60px 0 20px;
+      user-select: none;
+    }
+    @media (max-width: 480px) {
+      body {
+        margin: 140px 15px 40px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      nav a {
+        margin-left: 0;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="logo">WealthFlow</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog-overview.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-  <a href="index.html" class="back-link">&larr; Back to Home</a>
+  <main>
+    <h1>Maximizing Tax Efficiency: Smart Strategies for Investors in 2025</h1>
+    <img src="images/image12.jpg" alt="Tax Efficiency" />
 
-  <h1>Master Your Budget: Practical Tips for Financial Control</h1>
+    <p>Taxes can take a significant bite out of your investment returns if you don’t plan ahead. Smart tax strategies can help you legally minimize your tax liability, keep more of your gains, and accelerate your wealth-building journey.</p>
 
-  <img src="images/image12.jpg" alt="Budget planning with calculator and notes" class="post-image" />
+    <h2>Understand Your Tax Brackets and Investment Income Types</h2>
+    <p>Knowing how your investments are taxed is the first step:</p>
+    <ul>
+      <li><strong>Short-term capital gains:</strong> Profits from assets held less than a year, typically taxed at your ordinary income rate.</li>
+      <li><strong>Long-term capital gains:</strong> Gains from assets held longer than a year, usually taxed at a lower rate.</li>
+      <li><strong>Dividends:</strong> Qualified dividends may be taxed favorably, while non-qualified dividends are taxed as ordinary income.</li>
+    </ul>
 
-  <p>
-    Controlling your finances starts with a solid budget. A budget is more than numbers — it’s your roadmap to financial freedom, debt reduction, and savings growth.
-  </p>
+    <h2>Use Tax-Advantaged Accounts</h2>
+    <p>Maximize contributions to accounts like IRAs, 401(k)s, and Roth IRAs. These accounts offer:</p>
+    <ul>
+      <li>Tax deferral on earnings (traditional IRAs/401(k)s)</li>
+      <li>Tax-free growth and withdrawals (Roth IRAs)</li>
+      <li>Potential employer matches to boost contributions</li>
+    </ul>
 
-  <h2>1. Track Every Expense</h2>
-  <p>
-    Use apps or spreadsheets to monitor where every dollar goes. Awareness helps reduce unnecessary spending.
-  </p>
+    <h2>Harvest Tax Losses Strategically</h2>
+    <p>Tax-loss harvesting involves selling losing investments to offset gains elsewhere, reducing your taxable income. Remember:</p>
+    <ul>
+      <li>Avoid wash sales by not repurchasing the same asset within 30 days.</li>
+      <li>Use harvested losses to offset up to $3,000 in ordinary income per year.</li>
+    </ul>
 
-  <h2>2. Categorize Spending</h2>
-  <p>
-    Divide expenses into categories like essentials, entertainment, and savings to identify areas for adjustment.
-  </p>
+    <h2>Hold Investments Longer</h2>
+    <p>By holding your investments for more than one year, you qualify for the lower long-term capital gains tax rates, improving your net returns.</p>
 
-  <h2>3. Set Realistic Limits</h2>
-  <p>
-    Allocate monthly limits for each category based on your income and goals, allowing flexibility where needed.
-  </p>
+    <h2>Consider Municipal Bonds</h2>
+    <p>Municipal bonds offer interest that is often exempt from federal (and sometimes state) taxes, making them a tax-efficient income source for investors in higher tax brackets.</p>
 
-  <h2>4. Automate Savings</h2>
-  <p>
-    Set automatic transfers to savings accounts to “pay yourself first” without thinking.
-  </p>
+    <h2>Plan Withdrawals with Taxes in Mind</h2>
+    <p>During retirement, carefully plan your withdrawals from taxable, tax-deferred, and tax-free accounts to minimize tax impact and extend your portfolio’s longevity.</p>
 
-  <h2>5. Review and Adjust Monthly</h2>
-  <p>
-    Life changes, and so should your budget. Review monthly and tweak categories to stay on track.
-  </p>
+    <h2>Consult a Tax Professional</h2>
+    <p>Tax laws change frequently. Regularly consulting with a tax advisor ensures your strategies remain effective and compliant.</p>
 
-  <p>
-    Budget mastery is an ongoing process. With patience and consistency, you’ll gain financial control and confidence.
-  </p>
+    <p>Tax efficiency is a powerful tool in your investment arsenal — use it wisely to maximize your wealth in 2025 and beyond.</p>
 
+    <p>Stay tuned to WealthFlow for more insights on smart investing and money management.</p>
+  </main>
+
+  <footer>© 2025 WealthFlow. All rights reserved.</footer>
 </body>
 </html>
