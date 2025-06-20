@@ -2,46 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>5 Smart Side Hustles You Can Start This Weekend - WealthFlow Blog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5 Side Hustles You Can Start This Weekend - WealthFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #f9fafb;
+      --bg: #f4f6f8;
       --text: #1f2937;
       --accent: #2563eb;
       --highlight: #3b82f6;
-      --gray: #4b5563;
+      --gray: #6b7280;
       --radius: 12px;
       --white: #ffffff;
     }
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
     }
     body {
       font-family: 'Manrope', sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.8;
-      padding: 40px 20px;
+      line-height: 1.75;
       max-width: 740px;
-      margin: auto;
+      margin: 100px auto 60px;
+      padding: 0 20px;
     }
-    a {
-      color: var(--highlight);
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -1px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
       text-decoration: none;
+      color: var(--text);
       font-weight: 700;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .back-link {
-      display: inline-block;
-      margin-bottom: 30px;
       font-size: 1rem;
-      color: var(--highlight);
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: var(--highlight);
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    main {
+      margin-top: 20px;
     }
     h1 {
       font-size: 2.8rem;
@@ -50,125 +80,165 @@
       margin-bottom: 24px;
     }
     h2 {
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin-top: 32px;
-      margin-bottom: 16px;
+      font-size: 1.75rem;
       color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-weight: 800;
     }
     p {
       font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 20px;
       color: var(--text);
+      margin-bottom: 18px;
     }
     ul {
-      margin: 20px 0;
+      list-style-type: disc;
       padding-left: 20px;
-    }
-    li {
-      margin-bottom: 16px;
-      font-size: 1.1rem;
-      font-weight: 500;
+      margin-bottom: 18px;
       color: var(--text);
     }
-    .post-image {
-      width: 100%;
+    li {
+      margin-bottom: 10px;
+    }
+    .ad-placeholder {
+      margin: 40px 0;
+      padding: 16px;
+      border: 2px dashed var(--gray);
       border-radius: var(--radius);
-      margin: 24px 0;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      object-fit: cover;
-      max-height: 350px;
+      text-align: center;
+      color: var(--gray);
+      font-weight: 600;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      body {
+        margin-top: 140px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p, li {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <a href="index.html" class="back-link">&larr; Back to Home</a>
+<header id="site-header">
+  <div class="logo">WealthFlow</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog-overview.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 
-  <h1>5 Smart Side Hustles You Can Start This Weekend (No Experience Needed)</h1>
+<main>
+  <h1>5 Side Hustles You Can Start This Weekend</h1>
+  
+  <p>Feeling the pinch from rising costs or simply want to boost your income? Starting a side hustle is a smart and flexible way to increase your earnings without quitting your day job. The best part? Many side hustles can be started immediately, even this weekend! Below, we dive deep into five practical side hustles anyone can launch quickly, no experience needed.</p>
 
-  <img src="images/image1.jpg" alt="Person working on laptop with coffee" class="post-image" />
-
-  <p>
-    Looking to boost your income without diving into complicated investments or huge upfront costs? Side hustles have become one of the most effective ways to supplement your earnings and build financial security in 2025. Whether you're saving for a goal, paying down debt, or exploring new skills, starting a side hustle can open new doors.
-  </p>
-
-  <p>
-    The good news is, you don’t need specialized degrees or prior experience to get going. What matters most is your willingness to start and consistent effort. Below are five practical, beginner-friendly side hustles you can realistically launch this weekend, with minimal risk and real earning potential.
-  </p>
-
-  <h2>1. Freelance Content Writing</h2>
-  <p>
-    Content is king online, and businesses constantly need fresh blog posts, website copy, newsletters, and social media content. If you enjoy writing and can communicate clearly, freelance writing is a great place to start.
-  </p>
-  <p>
-    You can begin by creating profiles on freelance marketplaces like <a href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer">Fiverr</a> and <a href="https://upwork.com/" target="_blank" rel="noopener noreferrer">Upwork</a>. Initially, focus on smaller projects to build your portfolio and get positive reviews. Specializing in topics you’re passionate about—such as personal finance, fitness, or travel—can help you stand out.
-  </p>
-  <p>
-    As you gain experience, you can increase your rates and even pitch directly to blogs or companies looking for regular contributors.
-  </p>
-
-  <h2>2. Print-on-Demand Merch Stores</h2>
-  <p>
-    If you’re creative or have a knack for catchy phrases, print-on-demand platforms allow you to design merchandise like T-shirts, mugs, and phone cases without inventory or shipping headaches.
-  </p>
-  <p>
-    Services such as <a href="https://www.redbubble.com/" target="_blank" rel="noopener noreferrer">Redbubble</a> and <a href="https://www.teespring.com/" target="_blank" rel="noopener noreferrer">Teespring</a> handle production and delivery. Your focus is on creating appealing designs or slogans and marketing them through social media or your network.
-  </p>
-  <p>
-    This model requires minimal upfront investment and lets you test ideas with little risk. Successful stores often leverage trends, memes, or niche communities to find buyers.
-  </p>
-
-  <h2>3. Social Media Management for Small Businesses</h2>
-  <p>
-    Many small businesses understand the importance of a social media presence but lack the time or expertise to manage it effectively. If you know your way around Instagram, Facebook, or TikTok, you can offer to handle posting schedules, engagement, and content creation.
-  </p>
-  <p>
-    Start by reaching out to local businesses such as cafes, gyms, or boutiques and offer a trial period or discounted rates to prove your value. Building strong relationships and delivering consistent results can quickly grow your client list through word-of-mouth.
-  </p>
-
-  <h2>4. Sell Digital Products</h2>
-  <p>
-    Digital products—such as e-books, budgeting templates, printable planners, or online courses—are in high demand and can generate income continuously once created.
-  </p>
-  <p>
-    Platforms like <a href="https://gumroad.com/" target="_blank" rel="noopener noreferrer">Gumroad</a> and <a href="https://sellfy.com/" target="_blank" rel="noopener noreferrer">Sellfy</a> make it easy to upload and sell your creations without worrying about shipping or inventory.
-  </p>
-  <p>
-    Focus on creating helpful, niche-specific products that solve problems or provide value to your target audience. Promotion through social media, newsletters, and blogs can amplify your sales.
-  </p>
-
-  <h2>5. Virtual Assistant Services</h2>
-  <p>
-    Entrepreneurs and online businesses often need help managing day-to-day tasks like email organization, appointment setting, and market research. As a virtual assistant, you provide valuable support remotely.
-  </p>
-  <p>
-    Websites like <a href="https://remote.co/remote-jobs/virtual-assistant/" target="_blank" rel="noopener noreferrer">Remote.co</a> and <a href="https://www.freelancer.com/" target="_blank" rel="noopener noreferrer">Freelancer.com</a> list virtual assistant jobs you can apply for, or you can approach businesses directly.
-  </p>
-  <p>
-    The key skills include good communication, organization, and basic software proficiency—qualities you can sharpen while earning.
-  </p>
-
-  <h2>Getting Started Tips</h2>
+  <h2>1. Freelance Writing or Content Creation</h2>
+  <p>If you have a way with words, freelance writing can be a lucrative side hustle. Many businesses and websites need quality content — blog posts, articles, product descriptions, and more.</p>
+  <p><strong>How to start:</strong></p>
   <ul>
-    <li>Choose one hustle that aligns best with your skills and interests to avoid overwhelm.</li>
-    <li>Set realistic goals for your first weekend: set up profiles, create initial listings, or draft your first product.</li>
-    <li>Use free online resources and communities to learn and improve your offerings continuously.</li>
-    <li>Track your earnings and time spent to evaluate what works best for you.</li>
-    <li>Stay consistent—side hustles grow steadily when you put in regular effort.</li>
+    <li>Create a simple portfolio of writing samples — even short articles or blog posts you write yourself.</li>
+    <li>Sign up on freelance platforms like Upwork, Fiverr, or Freelancer.</li>
+    <li>Start applying for entry-level writing gigs or content creation projects.</li>
+  </ul>
+  <p>Bonus tip: If you enjoy it, you can expand into editing, social media posts, or even video scripts.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post1-1">Google Ad Placeholder - Top of Post 1</div>
+
+  <h2>2. Virtual Assistant Services</h2>
+  <p>Many entrepreneurs and small businesses need help managing their daily tasks like emails, scheduling, social media, and customer support. If you are organized and good at multitasking, becoming a virtual assistant (VA) is an excellent option.</p>
+  <p><strong>Getting started:</strong></p>
+  <ul>
+    <li>Identify which tasks you’re comfortable doing — like email management, calendar organization, or social media.</li>
+    <li>Create a simple service list and pricing.</li>
+    <li>Promote your services on social media, freelance platforms, or join VA Facebook groups.</li>
+  </ul>
+  <p>Virtual assistants often enjoy flexible hours and can build long-term relationships with clients.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post1-2">Google Ad Placeholder - Mid Post 1</div>
+
+  <h2>3. Online Tutoring or Teaching</h2>
+  <p>Have expertise in a school subject, language, or skill? Online tutoring can be rewarding and pays well. Platforms like VIPKid, Tutor.com, and Chegg Tutors allow you to connect with students worldwide.</p>
+  <p><strong>Quick start guide:</strong></p>
+  <ul>
+    <li>Decide your niche or subject — it could be math, English, music, or even fitness coaching.</li>
+    <li>Sign up on tutoring websites or advertise on social media.</li>
+    <li>Set a schedule that fits your availability.</li>
+  </ul>
+  <p>Online tutoring is flexible and helps you build teaching skills while earning.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post1-3">Google Ad Placeholder - Bottom of Post 1</div>
+
+  <h2>4. Selling Handmade or Digital Products</h2>
+  <p>If you’re crafty or creative, selling handmade items (like jewelry, art, or crafts) or digital products (printables, templates, ebooks) can generate quick income.</p>
+  <p><strong>How to launch fast:</strong></p>
+  <ul>
+    <li>Create a small batch of products or digital files ready to sell.</li>
+    <li>Use platforms like Etsy, Gumroad, or even Instagram and Facebook Marketplace.</li>
+    <li>Promote your products within your network or through social ads.</li>
+  </ul>
+  <p>Quality and unique offerings are key to stand out.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post1-4">Google Ad Placeholder - After Handmade Products Section</div>
+
+  <h2>5. Delivery or Rideshare Driver</h2>
+  <p>If you have a car, bike, or scooter, you can sign up for delivery or rideshare services like Uber, Lyft, DoorDash, or Postmates. This side hustle offers immediate earning potential and flexible hours.</p>
+  <p><strong>Steps to get started:</strong></p>
+  <ul>
+    <li>Check requirements for your city and vehicle.</li>
+    <li>Sign up on driver platforms and complete background checks.</li>
+    <li>Choose your hours and start accepting gigs.</li>
+  </ul>
+  <p>This is a great option if you like getting out and about and want to earn on your schedule.</p>
+
+  <h2>Final Tips for Side Hustle Success</h2>
+  <p>Starting a side hustle this weekend is achievable if you focus on practical steps and your strengths. Here are some quick tips:</p>
+  <ul>
+    <li>Start small and build your reputation.</li>
+    <li>Be consistent — even a few hours a week add up.</li>
+    <li>Invest in learning new skills if needed (many free resources online).</li>
+    <li>Stay organized to balance your main job and side hustle.</li>
   </ul>
 
-  <h2>Final Thoughts</h2>
-  <p>
-    Starting a side hustle is one of the most empowering financial decisions you can make. It builds skills, confidence, and most importantly, new income streams that add stability to your financial future.
-  </p>
-  <p>
-    Take the first step this weekend by picking a hustle, creating an account, and putting your plans into action. The small effort you make today can open doors to bigger opportunities tomorrow.
-  </p>
-  <p>
-    For more insights on smart money moves and passive income, keep exploring WealthFlow. Your journey to financial freedom starts here.
-  </p>
+  <p>Side hustles can change your financial game, give you new skills, and open exciting opportunities. Ready to start? Pick one from the list and dive in this weekend!</p>
+</main>
+
+<script>
+  const header = document.getElementById('site-header');
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      header.style.transform = 'translateY(0)';
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
 
 </body>
 </html>
