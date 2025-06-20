@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loan Payment Calculator | WealthFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --text: #1f2937;
+      --accent: #2563eb;
+      --highlight: #3b82f6;
+      --gray: #6b7280;
+      --radius: 12px;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      padding: 40px 20px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .logo { font-size: 2rem; font-weight: 900; color: var(--accent); }
+    nav { display: flex; gap: 20px; }
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+    }
+    nav a:hover { color: var(--highlight); }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: var(--accent);
+      font-weight: 900;
+      text-align: center;
+    }
+    .calculator {
+      background: var(--white);
+      padding: 30px;
+      border-radius: var(--radius);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+      border: 1px solid #e5e7eb;
+    }
+    label { display: block; font-weight: 700; margin-top: 20px; }
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: var(--radius);
+      font-size: 1rem;
+    }
+    button {
+      padding: 12px 20px;
+      background: var(--accent);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-top: 20px;
+      width: 100%;
+    }
+    button:hover { background: var(--highlight); }
+    .result {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--highlight);
+      text-align: center;
+    }
+    .ad-placeholder {
+      margin: 50px auto;
+      padding: 30px;
+      border: 2px dashed var(--accent);
+      border-radius: var(--radius);
+      text-align: center;
+      color: var(--accent);
+      background-color: #f0f4ff;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">WealthFlow</div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../blog-overview.html">Blog</a>
+      <a href="../contact.html">Contact</a>
+      <a href="financial.html">Calculators</a>
+    </nav>
+  </header>
+
+  <h1>Loan Payment Calculator</h1>
+
+  <div class="calculator">
+    <label>Loan Amount ($)</label>
+    <input type="number" id="loanAmount">
+    <label>Annual Interest Rate (%)</label>
+    <input type="number" id="loanRate">
+    <label>Loan Term (Years)</label>
+    <input type="number" id="loanYears">
+    <button onclick="calcLoan()">Calculate Monthly Payment</button>
+    <div class="result" id="loanResult"></div>
+  </div>
+
+  <div class="ad-placeholder">
+    Ad space placeholder — your ad code will go here.
+  </div>
+
+  <script>
+    function calcLoan() {
+      const p = parseFloat(document.getElementById('loanAmount').value);
+      const r = parseFloat(document.getElementById('loanRate').value) / 100 / 12;
+      const n = parseFloat(document.getElementById('loanYears').value) * 12;
+      if(!p || !r || !n){ document.getElementById('loanResult').innerText = 'Please fill all fields.'; return; }
+      const payment = (p * r) / (1 - Math.pow(1 + r, -n));
+      document.getElementById('loanResult').innerText = `Monthly Payment: $${payment.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
