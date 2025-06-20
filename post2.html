@@ -2,181 +2,242 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beginner’s Guide to Investing in 2025 - WealthFlow Blog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beginner’s Guide to Investing in 2025 - WealthFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #f9fafb;
+      --bg: #f4f6f8;
       --text: #1f2937;
       --accent: #2563eb;
       --highlight: #3b82f6;
-      --gray: #4b5563;
+      --gray: #6b7280;
       --radius: 12px;
       --white: #ffffff;
     }
-
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
     }
-
     body {
       font-family: 'Manrope', sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.8;
-      padding: 40px 20px;
+      line-height: 1.75;
       max-width: 740px;
-      margin: auto;
+      margin: 100px auto 60px;
+      padding: 0 20px;
     }
-
-    a {
-      color: var(--highlight);
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -1px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
       text-decoration: none;
+      color: var(--text);
       font-weight: 700;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 30px;
       font-size: 1rem;
-      color: var(--highlight);
+      position: relative;
     }
-
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: var(--highlight);
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    main {
+      margin-top: 20px;
+    }
     h1 {
       font-size: 2.8rem;
       font-weight: 900;
       color: var(--accent);
       margin-bottom: 24px;
     }
-
     h2 {
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin-top: 32px;
-      margin-bottom: 16px;
+      font-size: 1.75rem;
       color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-weight: 800;
     }
-
     p {
       font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 20px;
       color: var(--text);
+      margin-bottom: 18px;
     }
-
     ul {
-      margin: 20px 0;
+      list-style-type: disc;
       padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 16px;
-      font-size: 1.1rem;
-      font-weight: 500;
+      margin-bottom: 18px;
       color: var(--text);
     }
-
-    .post-image {
-      width: 100%;
+    li {
+      margin-bottom: 10px;
+    }
+    .ad-placeholder {
+      margin: 40px 0;
+      padding: 16px;
+      border: 2px dashed var(--gray);
       border-radius: var(--radius);
-      margin: 24px 0;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      object-fit: cover;
-      max-height: 350px;
+      text-align: center;
+      color: var(--gray);
+      font-weight: 600;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      body {
+        margin-top: 140px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p, li {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <a href="index.html" class="back-link">&larr; Back to Home</a>
+<header id="site-header">
+  <div class="logo">WealthFlow</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog-overview.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 
-  <h1>Beginner’s Guide to Investing in 2025: Where and How to Start Safely</h1>
+<main>
+  <h1>Beginner’s Guide to Investing in 2025</h1>
 
-  <img src="images/image2.jpg" alt="Investment concepts and growth chart" class="post-image" />
+  <p>Investing can seem intimidating at first, but with the right approach, anyone can start growing their wealth safely and effectively. Whether you want to save for retirement, build passive income, or just make your money work harder, 2025 offers plenty of opportunities to get started. This guide breaks down the essentials for beginners, helping you invest confidently this year.</p>
 
-  <p>
-    Saving money is important, but in 2025, it’s clear that investing is the key to real wealth-building and financial independence. Whether you're new to investing or just want to refresh your strategy, this guide will help you start safely and confidently.
-  </p>
+  <h2>Why Invest in 2025?</h2>
+  <p>Inflation, changing markets, and new financial products mean it’s more important than ever to grow your money smartly. Simply saving cash in a bank account won’t keep pace with rising costs. Investing allows you to harness the power of compound growth, where your earnings generate even more earnings over time.</p>
 
-  <p>
-    The best part? You don’t need a fortune or a finance degree to take control of your financial future. Let’s walk through the essential steps and smart options for beginner investors this year.
-  </p>
-
-  <h2>1. Grasp the Basics Before You Begin</h2>
-  <p>
-    Investing isn’t about luck — it’s about knowledge and strategy. Understand these key concepts before you put money into the market:
-  </p>
+  <h2>Step 1: Set Clear Financial Goals</h2>
+  <p>Before you invest, know what you’re aiming for. Are you saving for a down payment? Retirement? A vacation? Your goals will shape your strategy:</p>
   <ul>
-    <li><strong>Risk tolerance:</strong> Your comfort level with fluctuations in the value of your investments.</li>
-    <li><strong>Diversification:</strong> Spreading investments across various assets to reduce risk.</li>
-    <li><strong>Compound interest:</strong> Earnings generate more earnings over time — the longer you stay invested, the more you benefit.</li>
+    <li><strong>Short-term goals (less than 3 years):</strong> Consider safer investments like high-yield savings or short-term bonds.</li>
+    <li><strong>Medium-term goals (3-10 years):</strong> Balanced portfolio with a mix of stocks and bonds.</li>
+    <li><strong>Long-term goals (10+ years):</strong> Focus more on growth through stocks and ETFs.</li>
   </ul>
 
-  <h2>2. Start with Low-Cost Index Funds</h2>
-  <p>
-    For beginners, index funds offer a balanced, low-cost way to enter the stock market. These funds mirror the performance of an index like the S&P 500, automatically diversifying your investment.
-  </p>
-  <p>
-    Benefits include:
-  </p>
-  <ul>
-    <li>Exposure to hundreds of companies in a single investment.</li>
-    <li>Lower fees compared to actively managed funds.</li>
-    <li>Strong historical returns over the long term.</li>
-  </ul>
-  <p>
-    You can easily invest in index funds through reputable brokers such as <a href="https://www.vanguard.com/" target="_blank" rel="noopener noreferrer">Vanguard</a> and <a href="https://www.fidelity.com/" target="_blank" rel="noopener noreferrer">Fidelity</a>.
-  </p>
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post2-1">Google Ad Placeholder - Top of Post 2</div>
 
-  <h2>3. Use High-Interest Savings Accounts for Your Emergency Fund</h2>
-  <p>
-    Before fully diving into investing, ensure you have an emergency fund parked in a high-yield savings account. This fund should cover 3-6 months of expenses to keep you safe during unexpected situations.
-  </p>
-  <p>
-    In 2025, many online banks offer competitive rates above 4.5% APY, significantly better than traditional banks.
-  </p>
-  <p>
-    Recommended providers:
-  </p>
+  <h2>Step 2: Understand the Main Investment Types</h2>
+  <p>Knowing the basics helps you build a diversified portfolio:</p>
   <ul>
-    <li><a href="https://www.sofi.com/" target="_blank" rel="noopener noreferrer">SoFi</a></li>
-    <li><a href="https://www.ally.com/" target="_blank" rel="noopener noreferrer">Ally Bank</a></li>
+    <li><strong>Stocks:</strong> Ownership shares in companies. Higher potential returns but more volatile.</li>
+    <li><strong>Bonds:</strong> Loans to governments or companies with fixed interest. Lower risk, steady income.</li>
+    <li><strong>Exchange-Traded Funds (ETFs):</strong> Baskets of stocks or bonds that trade like stocks, great for diversification.</li>
+    <li><strong>Mutual Funds:</strong> Professionally managed pooled investments; often have higher fees.</li>
+    <li><strong>Real Estate:</strong> Physical property or REITs (real estate investment trusts) for income and growth.</li>
   </ul>
 
-  <h2>4. Consider REITs for Real Estate Exposure Without the Hassle</h2>
-  <p>
-    Real estate is a proven wealth-building asset, but buying property can be expensive and complex. Real Estate Investment Trusts (REITs) let you invest in commercial real estate portfolios through stocks, providing dividend income and potential growth.
-  </p>
-  <p>
-    You can purchase REIT shares just like stocks through your brokerage account.
-  </p>
+  <h2>Step 3: Choose Your Investment Platform</h2>
+  <p>Today, many user-friendly apps and platforms make investing accessible:</p>
+  <ul>
+    <li><strong>Robo-advisors:</strong> Automated investing based on your risk tolerance and goals (e.g., Betterment, Wealthfront).</li>
+    <li><strong>Brokerage Accounts:</strong> DIY investing on platforms like Fidelity, Schwab, Robinhood, or E*TRADE.</li>
+    <li><strong>Retirement Accounts:</strong> 401(k), IRA, or Roth IRA for tax-advantaged investing.</li>
+  </ul>
 
-  <h2>5. Always Invest Money You Can Afford to Lose</h2>
-  <p>
-    Investing comes with risks. Never use funds you need for daily expenses or emergencies. Focus on disposable income you can afford to set aside for long-term growth.
-  </p>
-  <p>
-    Avoid chasing hype or quick wins — instead, do your research and commit to steady, informed investing.
-  </p>
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post2-2">Google Ad Placeholder - Mid Post 2</div>
 
-  <h2>Final Thoughts</h2>
-  <p>
-    The investment landscape today is more accessible than ever. Success comes from understanding your goals, being patient, and making informed choices.
-  </p>
-  <p>
-    Start small, stay diversified, and keep learning. The earlier you start, the more powerful your money works for you through compounding.
-  </p>
+  <h2>Step 4: Start Small and Build Gradually</h2>
+  <p>You don’t need thousands to start investing. Many platforms allow you to buy fractional shares or invest as little as $5. The key is consistency:</p>
+  <ul>
+    <li>Automate contributions monthly or weekly.</li>
+    <li>Reinvest dividends to maximize growth.</li>
+    <li>Review and adjust your portfolio annually.</li>
+  </ul>
 
-  <p>
-    Follow WealthFlow for more beginner-friendly guides, smart money tips, and ways to grow your wealth confidently.
-  </p>
+  <h2>Step 5: Manage Risk Wisely</h2>
+  <p>Investing always carries some risk. To protect yourself:</p>
+  <ul>
+    <li>Diversify across different asset classes and industries.</li>
+    <li>Stay calm during market dips — remember investing is a long-term game.</li>
+    <li>Don’t invest money you might need in the near future.</li>
+  </ul>
+
+  <h2>Common Investing Mistakes to Avoid</h2>
+  <p>Learn from others’ errors to accelerate your success:</p>
+  <ul>
+    <li>Trying to time the market — consistently investing beats guessing highs and lows.</li>
+    <li>Ignoring fees — choose low-cost ETFs and funds.</li>
+    <li>Not having a plan — always align investments with your goals and risk tolerance.</li>
+  </ul>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post2-3">Google Ad Placeholder - Bottom of Post 2</div>
+
+  <h2>Useful Resources to Learn More</h2>
+  <p>Keep educating yourself through books, podcasts, and websites. Some favorites include:</p>
+  <ul>
+    <li><a href="https://www.investopedia.com" target="_blank" rel="noopener noreferrer">Investopedia</a></li>
+    <li><a href="https://www.bogleheads.org" target="_blank" rel="noopener noreferrer">Bogleheads Forum</a></li>
+    <li><a href="https://www.morningstar.com" target="_blank" rel="noopener noreferrer">Morningstar</a></li>
+  </ul>
+
+  <p>Investing is a journey — starting smartly today can lead to financial freedom tomorrow. Take the first step, keep learning, and watch your money grow in 2025 and beyond!</p>
+</main>
+
+<script>
+  const header = document.getElementById('site-header');
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      header.style.transform = 'translateY(0)';
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
 
 </body>
 </html>
