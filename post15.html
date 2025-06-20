@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Top Investment Mistakes to Avoid for Beginners in 2025 - WealthFlow</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <title>Top 5 Budgeting Apps to Help You Take Control of Your Money - WealthFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+    /* Same styling */
     :root {
-      --bg: #f9fafb;
+      --bg: #f4f6f8;
       --text: #1f2937;
       --accent: #2563eb;
       --highlight: #3b82f6;
-      --gray: #4b5563;
+      --gray: #6b7280;
       --radius: 12px;
       --white: #ffffff;
     }
@@ -23,27 +24,22 @@
       font-family: 'Manrope', sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.8;
+      line-height: 1.75;
       max-width: 740px;
       margin: 100px auto 60px;
       padding: 0 20px;
     }
-    a {
-      color: var(--highlight);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
     header {
       position: fixed;
       top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
       background: rgba(255,255,255,0.95);
       box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-      padding: 20px 40px;
-      display: flex; justify-content: space-between; align-items: center;
       z-index: 100;
+      transition: transform 0.3s ease;
     }
     .logo {
       font-size: 2rem;
@@ -51,11 +47,15 @@
       color: var(--accent);
       letter-spacing: -1px;
     }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
     nav a {
-      margin-left: 24px;
+      text-decoration: none;
+      color: var(--text);
       font-weight: 700;
       font-size: 1rem;
-      color: var(--text);
       position: relative;
     }
     nav a::after {
@@ -63,7 +63,7 @@
       position: absolute;
       width: 0;
       height: 2px;
-      bottom: -4px;
+      bottom: -3px;
       left: 0;
       background-color: var(--highlight);
       transition: width 0.3s ease;
@@ -71,87 +71,128 @@
     nav a:hover::after {
       width: 100%;
     }
-    main h1 {
+    main {
+      margin-top: 20px;
+    }
+    h1 {
       font-size: 2.8rem;
       font-weight: 900;
       color: var(--accent);
-      margin: 24px 0 16px;
-    }
-    main img {
-      width: 100%;
-      border-radius: var(--radius);
       margin-bottom: 24px;
-      object-fit: cover;
-      max-height: 320px;
     }
     h2 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      margin: 32px 0 12px;
+      font-size: 1.75rem;
       color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-weight: 800;
     }
     p {
       font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 16px;
       color: var(--text);
+      margin-bottom: 18px;
     }
     ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
-    }
-    li {
-      margin-bottom: 12px;
-      font-size: 1.1rem;
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 18px;
       color: var(--text);
     }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--gray);
-      margin: 60px 0 20px;
-      user-select: none;
+    li {
+      margin-bottom: 10px;
     }
-    @media (max-width: 480px) {
-      body {
-        margin: 140px 15px 40px;
-      }
+    .ad-placeholder {
+      margin: 40px 0;
+      padding: 16px;
+      border: 2px dashed var(--gray);
+      border-radius: var(--radius);
+      text-align: center;
+      color: var(--gray);
+      font-weight: 600;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        padding: 20px;
+        gap: 10px;
       }
-      nav a {
-        margin-left: 0;
+      nav {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      body {
+        margin-top: 140px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p, li {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">WealthFlow</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blog-overview.html">Blog</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
 
-  <main>
-    <h1>Top Investment Mistakes to Avoid for Beginners in 2025</h1>
-    <img src="images/image16.jpg" alt="Investment Mistakes" />
+<header id="site-header">
+  <div class="logo">WealthFlow</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog-overview.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 
-    <p>Starting your investment journey is exciting but can be risky without proper knowledge. Avoiding common mistakes early can save you money, reduce stress, and set you up for long-term success.</p>
+<main>
+  <h1>Top 5 Budgeting Apps to Help You Take Control of Your Money</h1>
 
-    <h2>Not Having a Clear Plan</h2>
-    <p>Investing without goals or strategy often leads to poor decisions. Define your risk tolerance, timeline, and financial objectives before investing.</p>
+  <p>Managing your finances is easier with the right tools. Here are five budgeting apps that can help you track spending, save money, and meet your financial goals.</p>
 
-    <h2>Trying to Time the Market</h2>
-    <p>Attempting to buy low and sell high consistently is nearly impossible. Focus instead on a disciplined, long-term approach like dollar-cost averaging.</p>
+  <h2>1. Mint</h2>
+  <p>A free app that connects your bank accounts, tracks expenses automatically, and offers budgeting tips.</p>
 
-    <h2>Ignoring Diversification</h2>
-    <p>Putting all your money in one stock or sector exposes you to unnecessary risk. Spread investments across asset classes and industries to manage risk.</p>
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post15-1">Google Ad Placeholder - Top of Post 15</div>
 
-    <h2>Reacting to Market Volatility</h2>
-    <p>
+  <h2>2. YNAB (You Need a Budget)</h2>
+  <p>Focuses on proactive budgeting by assigning every dollar a job. Great for those who want to plan ahead.</p>
+
+  <h2>3. PocketGuard</h2>
+  <p>Helps control spending by showing how much disposable income you have after bills and savings.</p>
+
+  <h2>4. Goodbudget</h2>
+  <p>Uses the envelope budgeting method to allocate funds for different categories.</p>
+
+  <h2>5. EveryDollar</h2>
+  <p>Simple interface with zero-based budgeting approach to manage monthly income and expenses.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post15-2">Google Ad Placeholder - Mid Post 15</div>
+
+  <p>All these apps have mobile and desktop versions, so find one that fits your style and start taking control today.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post15-3">Google Ad Placeholder - Bottom of Post 15</div>
+</main>
+
+<script>
+  const header = document.getElementById('site-header');
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      header.style.transform = 'translateY(0)';
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
+</body>
+</html>
