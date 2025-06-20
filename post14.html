@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Essential Retirement Planning Tips for a Comfortable Future - WealthFlow</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <title>Retirement Planning 101: How to Build Wealth for Your Future - WealthFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+    /* Same styling */
     :root {
-      --bg: #f9fafb;
+      --bg: #f4f6f8;
       --text: #1f2937;
       --accent: #2563eb;
       --highlight: #3b82f6;
-      --gray: #4b5563;
+      --gray: #6b7280;
       --radius: 12px;
       --white: #ffffff;
     }
@@ -23,27 +24,22 @@
       font-family: 'Manrope', sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.8;
+      line-height: 1.75;
       max-width: 740px;
       margin: 100px auto 60px;
       padding: 0 20px;
     }
-    a {
-      color: var(--highlight);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
     header {
       position: fixed;
       top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
       background: rgba(255,255,255,0.95);
       box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-      padding: 20px 40px;
-      display: flex; justify-content: space-between; align-items: center;
       z-index: 100;
+      transition: transform 0.3s ease;
     }
     .logo {
       font-size: 2rem;
@@ -51,11 +47,15 @@
       color: var(--accent);
       letter-spacing: -1px;
     }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
     nav a {
-      margin-left: 24px;
+      text-decoration: none;
+      color: var(--text);
       font-weight: 700;
       font-size: 1rem;
-      color: var(--text);
       position: relative;
     }
     nav a::after {
@@ -63,7 +63,7 @@
       position: absolute;
       width: 0;
       height: 2px;
-      bottom: -4px;
+      bottom: -3px;
       left: 0;
       background-color: var(--highlight);
       transition: width 0.3s ease;
@@ -71,103 +71,131 @@
     nav a:hover::after {
       width: 100%;
     }
-    main h1 {
+    main {
+      margin-top: 20px;
+    }
+    h1 {
       font-size: 2.8rem;
       font-weight: 900;
       color: var(--accent);
-      margin: 24px 0 16px;
-    }
-    main img {
-      width: 100%;
-      border-radius: var(--radius);
       margin-bottom: 24px;
-      object-fit: cover;
-      max-height: 320px;
     }
     h2 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      margin: 32px 0 12px;
+      font-size: 1.75rem;
       color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-weight: 800;
     }
     p {
       font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 16px;
       color: var(--text);
+      margin-bottom: 18px;
     }
     ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
-    }
-    li {
-      margin-bottom: 12px;
-      font-size: 1.1rem;
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 18px;
       color: var(--text);
     }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--gray);
-      margin: 60px 0 20px;
-      user-select: none;
+    li {
+      margin-bottom: 10px;
     }
-    @media (max-width: 480px) {
-      body {
-        margin: 140px 15px 40px;
-      }
+    .ad-placeholder {
+      margin: 40px 0;
+      padding: 16px;
+      border: 2px dashed var(--gray);
+      border-radius: var(--radius);
+      text-align: center;
+      color: var(--gray);
+      font-weight: 600;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        padding: 20px;
+        gap: 10px;
       }
-      nav a {
-        margin-left: 0;
+      nav {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      body {
+        margin-top: 140px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p, li {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">WealthFlow</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blog-overview.html">Blog</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
 
-  <main>
-    <h1>Essential Retirement Planning Tips for a Comfortable Future</h1>
-    <img src="images/image15.jpg" alt="Retirement Planning" />
+<header id="site-header">
+  <div class="logo">WealthFlow</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog-overview.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 
-    <p>Retirement planning is essential to ensure you enjoy your later years with financial security and peace of mind. The earlier you start, the more comfortable your retirement can be.</p>
+<main>
+  <h1>Retirement Planning 101: How to Build Wealth for Your Future</h1>
 
-    <h2>Set Clear Retirement Goals</h2>
-    <p>Decide when you want to retire and the lifestyle you want to maintain. Estimate the amount of money you'll need to support that lifestyle.</p>
+  <p>Planning for retirement might seem far away, but the earlier you start, the better positioned you'll be to enjoy financial freedom later in life. Here’s how to begin your journey.</p>
 
-    <h2>Maximize Retirement Account Contributions</h2>
-    <p>Contribute the maximum allowed to retirement accounts like 401(k)s and IRAs to take advantage of tax benefits and compound growth.</p>
+  <h2>Step 1: Determine Your Retirement Goals</h2>
+  <p>Estimate your desired retirement lifestyle and expenses to know how much you need to save.</p>
 
-    <h2>Diversify Your Investments</h2>
-    <p>Spread your investments across asset classes—stocks, bonds, real estate—to balance risk and reward as you age.</p>
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post14-1">Google Ad Placeholder - Top of Post 14</div>
 
-    <h2>Plan for Healthcare Costs</h2>
-    <p>Healthcare can be one of the largest expenses in retirement. Consider options like Health Savings Accounts (HSAs) to prepare.</p>
+  <h2>Step 2: Understand Different Retirement Accounts</h2>
+  <p>Options include 401(k)s, IRAs, Roth IRAs, pensions, and more. Each has unique benefits and tax implications.</p>
 
-    <h2>Consider Social Security Timing</h2>
-    <p>Deciding when to claim Social Security benefits impacts your monthly payments. Delaying benefits can increase your monthly income.</p>
+  <h2>Step 3: Maximize Employer Contributions</h2>
+  <p>If your employer offers a matching contribution, contribute enough to get the full match — it's free money.</p>
 
-    <h2>Review and Adjust Regularly</h2>
-    <p>Life changes, and so should your plan. Review your retirement strategy annually and adjust for changes in income, expenses, or goals.</p>
+  <h2>Step 4: Invest for Growth</h2>
+  <p>Use a diversified portfolio of stocks, bonds, and funds aligned with your risk tolerance and timeline.</p>
 
-    <h2>Work with a Financial Advisor</h2>
-    <p>A professional can help optimize your plan and provide personalized advice based on your unique situation.</p>
+  <h2>Step 5: Automate Your Contributions</h2>
+  <p>Set up automatic deposits to retirement accounts to build wealth consistently without thinking about it.</p>
 
-    <p>By taking these steps, you can build a retirement plan that helps you live comfortably and confidently in your golden years.</p>
-  </main>
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post14-2">Google Ad Placeholder - Mid Post 14</div>
 
-  <footer>© 2025 WealthFlow. All rights reserved.</footer>
+  <h2>Step 6: Monitor and Adjust</h2>
+  <p>Review your investments regularly and rebalance to stay on track with your goals.</p>
+
+  <p>Remember, retirement planning is a marathon, not a sprint. The power of compound interest means even small amounts saved early grow substantially over time.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post14-3">Google Ad Placeholder - Bottom of Post 14</div>
+</main>
+
+<script>
+  const header = document.getElementById('site-header');
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      header.style.transform = 'translateY(0)';
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
 </body>
 </html>
