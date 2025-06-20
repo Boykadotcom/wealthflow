@@ -112,13 +112,15 @@
       flex-direction: column;
       text-align: center;
       padding: 20px;
-      padding-top: 120px;
+      padding-top: 120px; /* push below fixed header */
     }
 
     .hero h1 {
       font-size: 4rem;
       font-weight: 900;
+      letter-spacing: -1.2px;
       margin-bottom: 10px;
+      user-select: none;
       text-shadow: 0 3px 8px rgba(0,0,0,0.5);
     }
 
@@ -126,6 +128,8 @@
       font-size: 1.4rem;
       max-width: 700px;
       font-weight: 600;
+      transition: transform 0.2s ease;
+      user-select: none;
       text-shadow: 0 2px 6px rgba(0,0,0,0.4);
     }
 
@@ -182,14 +186,17 @@
       font-weight: 500;
     }
 
+    /* Ad placeholder styling */
     .ad-placeholder {
       margin: 30px 0;
       padding: 20px;
       border: 2px dashed var(--accent);
       border-radius: var(--radius);
       text-align: center;
+      font-size: 1rem;
       color: var(--accent);
       background-color: #f0f4ff;
+      user-select: none;
     }
 
     .email-signup {
@@ -233,6 +240,7 @@
       cursor: pointer;
       font-weight: 700;
       font-size: 1rem;
+      transition: background 0.3s ease;
     }
 
     .email-signup button:hover {
@@ -244,13 +252,22 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 20px;
+        gap: 10px;
       }
+
       nav {
         flex-wrap: wrap;
         gap: 16px;
       }
-      .hero h1 { font-size: 2.5rem; }
-      .hero p { font-size: 1.1rem; }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
       .email-signup input[type="email"] {
         width: 100%;
         margin-bottom: 12px;
@@ -259,45 +276,128 @@
     }
   </style>
 </head>
-
 <body>
-  <header>
+
+  <header id="site-header">
     <div class="logo">WealthFlow</div>
     <nav>
       <a href="about.html">About</a>
       <a href="blog-overview.html">Blog</a>
       <a href="contact.html">Contact</a>
-      <a href="financial.html">Financial Calculator</a>
+      <a href="financial.html">Financial Calculator</a> <!-- Added this link -->
     </nav>
     <a href="subscribe.html" class="support-btn">Subscribe</a>
   </header>
 
   <section class="hero">
     <h1>Build Wealth Smarter</h1>
-    <p>Invest. Save. Grow. Join the new generation of financial independence seekers.</p>
+    <p id="motivate">Invest. Save. Grow. Join the new generation of financial independence seekers.</p>
   </section>
 
   <div class="container">
-    <!-- Sample blog posts -->
-    <div class="post" onclick="location.href='post1.html'">
-      <img src="images/image1.jpg" class="post-image" alt="">
+
+    <div class="post" onclick="window.location.href='post1.html'">
+      <img src="images/image1.jpg" alt="Side Hustle Ideas" class="post-image">
       <h2><a href="post1.html">5 Side Hustles You Can Start This Weekend</a></h2>
-      <p>Tired of waiting for payday? Start a profitable side hustle today.</p>
+      <p>Tired of waiting for payday? These smart side hustles can generate real income starting today.</p>
     </div>
 
-    <!-- Add ad placeholders and other posts here similarly -->
+    <div class="post" onclick="window.location.href='post2.html'">
+      <img src="images/image2.jpg" alt="Investing Guide" class="post-image">
+      <h2><a href="post2.html">Beginner’s Guide to Investing in 2025</a></h2>
+      <p>Learn how to invest safely and grow your money with confidence — no jargon, no nonsense.</p>
+    </div>
+
+    <!-- Ad placeholder -->
+    <div class="ad-placeholder">
+      <!-- Google Adsense code can be placed here -->
+      Advertisement
+    </div>
+
+    <div class="post" onclick="window.location.href='post3.html'">
+      <img src="images/image3.jpg" alt="Retirement Planning" class="post-image">
+      <h2><a href="post3.html">Retirement Planning Strategies That Work in 2025 and Beyond</a></h2>
+      <p>Plan your retirement smartly with up-to-date strategies tailored for today's economic landscape.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post4.html'">
+      <img src="images/image4.jpg" alt="Budgeting Basics" class="post-image">
+      <h2><a href="post4.html">Mastering Budgeting: A Step-by-Step Guide</a></h2>
+      <p>Take control of your finances by mastering budgeting techniques that really work.</p>
+    </div>
+
+    <!-- Ad placeholder -->
+    <div class="ad-placeholder">
+      <!-- Google Adsense code can be placed here -->
+      Advertisement
+    </div>
+
+    <div class="post" onclick="window.location.href='post5.html'">
+      <img src="images/image5.jpg" alt="Tax Tips" class="post-image">
+      <h2><a href="post5.html">Essential Tax Tips Every Investor Should Know</a></h2>
+      <p>Maximize your returns by understanding these essential tax strategies for investors.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post6.html'">
+      <img src="images/image6.jpg" alt="Passive Income" class="post-image">
+      <h2><a href="post6.html">How to Build Passive Income Streams in 2025</a></h2>
+      <p>Discover smart ways to generate income while you sleep with these proven strategies.</p>
+    </div>
+
+    <!-- Ad placeholder -->
+    <div class="ad-placeholder">
+      <!-- Google Adsense code can be placed here -->
+      Advertisement
+    </div>
+
+    <div class="post" onclick="window.location.href='post7.html'">
+      <img src="images/image7.jpg" alt="CFA Exam Tips" class="post-image">
+      <h2><a href="post7.html">CFA Exam Preparation: Tips and Resources to Pass</a></h2>
+      <p>Get ready for your CFA exam with expert tips and reliable study resources.</p>
+    </div>
+
+    <div class="post" onclick="window.location.href='post8.html'">
+      <img src="images/image9.jpg" alt="Smart Investing" class="post-image">
+      <h2><a href="post8.html">Smart Investing Tips for a Volatile Market</a></h2>
+      <p>Navigate market ups and downs with these smart, research-backed investing tips.</p>
+    </div>
+
+    <!-- Ad placeholder -->
+    <div class="ad-placeholder">
+      <!-- Google Adsense code can be placed here -->
+      Advertisement
+    </div>
 
     <div class="email-signup">
       <h3>Stay Ahead</h3>
-      <p>Get weekly finance tips, investing hacks, and side hustle ideas in your inbox.</p>
-      <form action="https://formsubmit.co/salimmalali11@gmail.com" method="POST">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://boykadotcom.github.io/wealthflow/thank-you.html">
+      <p>Get weekly finance tips, investing hacks, and side hustle ideas delivered to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required />
         <button type="submit">Join Free</button>
       </form>
     </div>
+
   </div>
+
+  <script>
+    const header = document.getElementById('site-header');
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY && window.scrollY > 100) {
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        header.style.transform = 'translateY(0)';
+      }
+      lastScrollY = window.scrollY;
+    });
+
+    const motivate = document.getElementById('motivate');
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      motivate.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  </script>
 
 </body>
 </html>
