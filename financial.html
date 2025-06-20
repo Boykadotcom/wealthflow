@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Financial Calculators | WealthFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --text: #1f2937;
+      --accent: #2563eb;
+      --highlight: #3b82f6;
+      --gray: #6b7280;
+      --radius: 12px;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      padding: 40px 20px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .logo { font-size: 2rem; font-weight: 900; color: var(--accent); }
+    nav { display: flex; gap: 20px; }
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+    }
+    nav a:hover { color: var(--highlight); }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: var(--accent);
+      font-weight: 900;
+      text-align: center;
+    }
+    .calculator-list {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .calculator-list a {
+      display: block;
+      background: var(--white);
+      padding: 20px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .calculator-list a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+    }
+    .ad-placeholder {
+      margin: 50px auto;
+      padding: 30px;
+      border: 2px dashed var(--accent);
+      border-radius: var(--radius);
+      text-align: center;
+      color: var(--accent);
+      background-color: #f0f4ff;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">WealthFlow</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog-overview.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="calculator-tools/financial.html">Financial Calculator</a>
+    </nav>
+  </header>
+
+  <h1>Financial Calculators</h1>
+
+  <div class="calculator-list">
+    <a href="calculator-tools/loan-calculator.html">📊 Loan Payment Calculator</a>
+    <a href="calculator-tools/investment-calculator.html">📈 Investment Return Calculator</a>
+    <a href="calculator-tools/savings-calculator.html">💰 Savings Growth Calculator</a>
+  </div>
+
+  <div class="ad-placeholder">
+    Ad space placeholder — your ad code will go here.
+  </div>
+</body>
+</html>
