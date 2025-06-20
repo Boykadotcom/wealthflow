@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Investing Tips for a Volatile Market - WealthFlow Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navigating Stock Market Volatility: Strategies to Protect Your Portfolio - WealthFlow</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    /* Same styles as before */
     :root {
       --bg: #f9fafb;
       --text: #1f2937;
@@ -16,15 +15,19 @@
       --radius: 12px;
       --white: #ffffff;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
       font-family: 'Manrope', sans-serif;
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.8;
-      padding: 40px 20px;
       max-width: 740px;
-      margin: auto;
+      margin: 100px auto 60px;
+      padding: 0 20px;
     }
     a {
       color: var(--highlight);
@@ -34,91 +37,152 @@
     a:hover {
       text-decoration: underline;
     }
-    .back-link {
-      display: inline-block;
-      margin-bottom: 30px;
-      font-size: 1rem;
-      color: var(--highlight);
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
     }
-    h1 {
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -1px;
+    }
+    nav a {
+      margin-left: 24px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--highlight);
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    main h1 {
       font-size: 2.8rem;
       font-weight: 900;
       color: var(--accent);
+      margin: 24px 0 16px;
+    }
+    main img {
+      width: 100%;
+      border-radius: var(--radius);
       margin-bottom: 24px;
+      object-fit: cover;
+      max-height: 320px;
     }
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 800;
-      margin-top: 32px;
-      margin-bottom: 16px;
+      margin: 32px 0 12px;
       color: var(--accent);
     }
     p {
       font-size: 1.1rem;
       font-weight: 500;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       color: var(--text);
     }
     ul {
-      margin: 20px 0;
-      padding-left: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
     li {
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       font-size: 1.1rem;
-      font-weight: 500;
       color: var(--text);
     }
-    .post-image {
-      width: 100%;
-      border-radius: var(--radius);
-      margin: 24px 0;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      object-fit: cover;
-      max-height: 350px;
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin: 60px 0 20px;
+      user-select: none;
+    }
+    @media (max-width: 480px) {
+      body {
+        margin: 140px 15px 40px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      nav a {
+        margin-left: 0;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="logo">WealthFlow</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog-overview.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-  <a href="index.html" class="back-link">&larr; Back to Home</a>
+  <main>
+    <h1>Navigating Stock Market Volatility: Strategies to Protect Your Portfolio</h1>
+    <img src="images/image11.jpg" alt="Stock Market Volatility Chart" />
 
-  <h1>Smart Investing Tips for a Volatile Market</h1>
+    <p>Stock market volatility is an inevitable part of investing, but how you react to it can make a huge difference to your financial future. Market ups and downs can trigger emotional decisions that often lead to losses. This post equips you with actionable strategies to protect your portfolio and even benefit from volatility.</p>
 
-  <img src="images/image11.jpg" alt="Stock market volatility" class="post-image" />
+    <h2>Understanding Market Volatility</h2>
+    <p>Volatility refers to the degree of variation in stock prices over a certain period. High volatility means prices change rapidly in either direction, which can be intimidating for many investors. However, volatility also presents opportunities for long-term investors who have the right mindset and tools.</p>
 
-  <p>
-    Market volatility is a natural part of investing, but it can be nerve-wracking if you’re unsure how to respond. With the ups and downs expected in 2025 and beyond, it’s important to stay smart, calm, and strategic.
-  </p>
+    <h2>Diversify to Mitigate Risk</h2>
+    <p>One of the fundamental ways to protect your portfolio is diversification. Spreading your investments across various asset classes — stocks, bonds, real estate, and commodities — reduces the impact of any single asset's poor performance.</p>
+    <ul>
+      <li>Invest in index funds or ETFs that cover multiple sectors.</li>
+      <li>Include bonds or stable dividend-paying stocks to balance volatility.</li>
+      <li>Consider international exposure to spread geographic risk.</li>
+    </ul>
 
-  <h2>1. Maintain a Long-Term Perspective</h2>
-  <p>
-    Markets fluctuate daily, but historically, long-term investments tend to grow. Avoid impulsive decisions based on short-term drops.
-  </p>
+    <h2>Set Realistic Expectations and Stick to Your Plan</h2>
+    <p>Volatility spikes often lead to panic selling, which locks in losses. Establish clear investment goals and a long-term plan, and resist knee-jerk reactions to market noise.</p>
+    <ul>
+      <li>Review your portfolio regularly but avoid daily checks.</li>
+      <li>Maintain an emergency fund to avoid selling assets in a downturn.</li>
+      <li>Use dollar-cost averaging to invest consistently over time.</li>
+    </ul>
 
-  <h2>2. Diversify Your Portfolio</h2>
-  <p>
-    Spread your investments across asset classes like stocks, bonds, real estate, and commodities to reduce risk.
-  </p>
+    <h2>Use Stop-Loss and Limit Orders Wisely</h2>
+    <p>Stop-loss orders can protect your investments by automatically selling an asset if it falls below a set price. This can limit downside but should be used thoughtfully to avoid triggering sales during normal market dips.</p>
 
-  <h2>3. Regularly Rebalance</h2>
-  <p>
-    Periodically adjust your portfolio to maintain your target allocation, especially after significant market moves.
-  </p>
+    <h2>Focus on Quality Investments</h2>
+    <p>Companies with strong balance sheets, steady cash flow, and competitive advantages tend to weather volatility better. Research and prioritize quality stocks that align with your risk tolerance.</p>
 
-  <h2>4. Invest in Quality Companies</h2>
-  <p>
-    Focus on companies with strong fundamentals, steady earnings, and competitive advantages.
-  </p>
+    <h2>Consider Hedging Strategies</h2>
+    <p>More advanced investors might explore options or inverse ETFs to hedge against downturns, but these come with additional risks and complexity. Only pursue if you understand the instruments fully.</p>
 
-  <h2>5. Keep Emergency Savings Separate</h2>
-  <p>
-    Don’t dip into your investment funds for emergencies. Having liquid savings protects your investments during downturns.
-  </p>
+    <h2>Conclusion</h2>
+    <p>Volatility is not the enemy; it’s part of the investing journey. By diversifying, setting realistic expectations, and focusing on quality, you can protect and grow your portfolio regardless of market fluctuations. Stay calm, stay informed, and view volatility as an opportunity rather than a threat.</p>
 
-  <p>
-    Navigating market volatility successfully requires discipline, education, and a clear plan. Stay focused on your financial goals, and use market dips as opportunities, not obstacles.
-  </p>
+    <p>For more smart investing advice, keep following WealthFlow.</p>
+  </main>
 
+  <footer>© 2025 WealthFlow. All rights reserved.</footer>
 </body>
 </html>
