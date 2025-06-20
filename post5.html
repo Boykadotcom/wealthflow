@@ -2,40 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Top 7 Budgeting Tips for Financial Freedom in 2025 - WealthFlow</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding Credit Scores and How to Improve Yours Fast - WealthFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
+    /* Consistent styling */
     :root {
-      --bg: #f9fafb;
+      --bg: #f4f6f8;
       --text: #1f2937;
       --accent: #2563eb;
       --highlight: #3b82f6;
-      --gray: #4b5563;
+      --gray: #6b7280;
       --radius: 12px;
       --white: #ffffff;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
     body {
       font-family: 'Manrope', sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.8;
-      padding: 40px 20px;
+      line-height: 1.75;
       max-width: 740px;
-      margin: auto;
+      margin: 100px auto 60px;
+      padding: 0 20px;
     }
-    a {
-      color: var(--highlight);
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -1px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
       text-decoration: none;
+      color: var(--text);
       font-weight: 700;
-    }
-    a:hover { text-decoration: underline; }
-    .back-link {
-      display: inline-block;
-      margin-bottom: 30px;
       font-size: 1rem;
-      color: var(--highlight);
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: var(--highlight);
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    main {
+      margin-top: 20px;
     }
     h1 {
       font-size: 2.8rem;
@@ -43,58 +80,128 @@
       color: var(--accent);
       margin-bottom: 24px;
     }
-    img {
-      width: 100%;
-      border-radius: var(--radius);
-      margin-bottom: 20px;
-      max-height: 280px;
-      object-fit: cover;
+    h2 {
+      font-size: 1.75rem;
+      color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-weight: 800;
     }
     p {
       font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 20px;
       color: var(--text);
+      margin-bottom: 18px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 18px;
+      color: var(--text);
+    }
+    li {
+      margin-bottom: 10px;
     }
     .ad-placeholder {
       margin: 40px 0;
-      padding: 20px;
-      background: #e0e7ff;
+      padding: 16px;
+      border: 2px dashed var(--gray);
       border-radius: var(--radius);
       text-align: center;
-      font-style: italic;
-      color: #374151;
+      color: var(--gray);
       font-weight: 600;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      body {
+        margin-top: 140px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p, li {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <a href="index.html" class="back-link">&larr; Back to Home</a>
+<header id="site-header">
+  <div class="logo">WealthFlow</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog-overview.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 
-  <h1>Top 7 Budgeting Tips for Financial Freedom in 2025</h1>
+<main>
+  <h1>Understanding Credit Scores and How to Improve Yours Fast</h1>
 
-  <img src="images/image5.jpg" alt="Budgeting Tips" />
+  <p>Your credit score is one of the most important numbers in your financial life. It influences your ability to get loans, credit cards, better interest rates, and sometimes even affects job prospects or renting an apartment. Understanding how your credit score works and how to improve it quickly can save you money and open new opportunities.</p>
 
-  <p>Achieving financial freedom starts with mastering your budget. As 2025 unfolds, smart budgeting strategies are more important than ever. Whether you're a beginner or refining your money management skills, these 7 budgeting tips will help you take control of your finances and build lasting wealth.</p>
+  <h2>What Is a Credit Score?</h2>
+  <p>A credit score is a numerical representation of your creditworthiness, typically ranging between 300 and 850. The higher the score, the more trustworthy you appear to lenders.</p>
 
-  <p><strong>1. Track Every Expense:</strong> Use apps or spreadsheets to monitor all your spending. Awareness is the first step to smarter decisions.</p>
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post5-1">Google Ad Placeholder - Top of Post 5</div>
 
-  <p><strong>2. Set Realistic Goals:</strong> Define what financial freedom means for you — debt-free, retirement savings, or emergency fund — and create milestones.</p>
+  <h2>Key Factors That Affect Your Credit Score</h2>
+  <ul>
+    <li><strong>Payment history (35%):</strong> Always pay bills on time.</li>
+    <li><strong>Amounts owed (30%):</strong> Keep credit utilization low — ideally under 30%.</li>
+    <li><strong>Length of credit history (15%):</strong> Older accounts help your score.</li>
+    <li><strong>New credit (10%):</strong> Opening many new accounts quickly can hurt.</li>
+    <li><strong>Types of credit used (10%):</strong> A mix of credit types is positive.</li>
+  </ul>
 
-  <p><strong>3. Prioritize Needs Over Wants:</strong> Cut down on non-essential purchases to free up money for savings and investments.</p>
+  <h2>Steps to Improve Your Credit Score Quickly</h2>
+  <ul>
+    <li><strong>Pay down existing debt:</strong> Focus on credit cards with high balances.</li>
+    <li><strong>Make all payments on time:</strong> Set reminders or automate payments.</li>
+    <li><strong>Avoid new credit inquiries:</strong> Only apply for credit when necessary.</li>
+    <li><strong>Keep old accounts open:</strong> Lengthen your credit history.</li>
+    <li><strong>Dispute errors:</strong> Check your credit reports regularly for inaccuracies and dispute any.</li>
+  </ul>
 
-  <p><strong>4. Automate Savings:</strong> Set up automatic transfers to your savings or investment accounts right after payday.</p>
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post5-2">Google Ad Placeholder - Mid Post 5</div>
 
-  <p><strong>5. Review Subscriptions:</strong> Cancel unused subscriptions or switch to cheaper alternatives.</p>
+  <h2>Monitoring Your Credit Score</h2>
+  <p>Use free tools from credit bureaus or services like Credit Karma to keep tabs on your score and receive alerts about changes.</p>
 
-  <p><strong>6. Build an Emergency Fund:</strong> Aim for at least 3-6 months’ worth of expenses to cushion unexpected events.</p>
+  <p>Improving your credit score is a marathon, not a sprint, but these steps can accelerate your progress and open doors to better financial products and lower interest rates.</p>
 
-  <p><strong>7. Use the 50/30/20 Rule:</strong> Allocate 50% to needs, 30% to wants, and 20% to savings/investments — adjust as needed.</p>
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post5-3">Google Ad Placeholder - Bottom of Post 5</div>
+</main>
 
-  <div class="ad-placeholder">[Google AdSense Ad Here]</div>
-
-  <p>Consistency and discipline in budgeting set the foundation for financial independence. Start today, and watch your wealth grow steadily throughout 2025 and beyond.</p>
+<script>
+  const header = document.getElementById('site-header');
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      header.style.transform = 'translateY(0)';
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
 
 </body>
 </html>
