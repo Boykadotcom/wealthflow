@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>How to Improve Your Credit Card Usage Responsibly - WealthFlow</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <title>Beginner’s Guide to Investing: How to Get Started in 2025 - WealthFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     /* Same styling */
     :root {
-      --bg: #f9fafb;
+      --bg: #f4f6f8;
       --text: #1f2937;
       --accent: #2563eb;
       --highlight: #3b82f6;
-      --gray: #4b5563;
+      --gray: #6b7280;
       --radius: 12px;
       --white: #ffffff;
     }
@@ -22,31 +22,24 @@
     }
     body {
       font-family: 'Manrope', sans-serif;
-      background: var(--bg);
+      background-color: var(--bg);
       color: var(--text);
-      line-height: 1.8;
+      line-height: 1.75;
       max-width: 740px;
       margin: 100px auto 60px;
       padding: 0 20px;
     }
-    a {
-      color: var(--highlight);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
     header {
       position: fixed;
       top: 0; left: 0; right: 0;
-      background: rgba(255,255,255,0.95);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 20px 40px;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
       z-index: 100;
+      transition: transform 0.3s ease;
     }
     .logo {
       font-size: 2rem;
@@ -54,11 +47,15 @@
       color: var(--accent);
       letter-spacing: -1px;
     }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
     nav a {
-      margin-left: 24px;
+      text-decoration: none;
+      color: var(--text);
       font-weight: 700;
       font-size: 1rem;
-      color: var(--text);
       position: relative;
     }
     nav a::after {
@@ -66,7 +63,7 @@
       position: absolute;
       width: 0;
       height: 2px;
-      bottom: -4px;
+      bottom: -3px;
       left: 0;
       background-color: var(--highlight);
       transition: width 0.3s ease;
@@ -74,64 +71,75 @@
     nav a:hover::after {
       width: 100%;
     }
-    main h1 {
+    main {
+      margin-top: 20px;
+    }
+    h1 {
       font-size: 2.8rem;
       font-weight: 900;
       color: var(--accent);
-      margin: 24px 0 16px;
-    }
-    main img {
-      width: 100%;
-      border-radius: var(--radius);
       margin-bottom: 24px;
-      object-fit: cover;
-      max-height: 320px;
     }
     h2 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      margin: 32px 0 12px;
+      font-size: 1.75rem;
       color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-weight: 800;
     }
     p {
       font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 16px;
       color: var(--text);
+      margin-bottom: 18px;
     }
     ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
-    }
-    li {
-      margin-bottom: 12px;
-      font-size: 1.1rem;
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 18px;
       color: var(--text);
     }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--gray);
-      margin: 60px 0 20px;
-      user-select: none;
+    li {
+      margin-bottom: 10px;
     }
-    @media (max-width: 480px) {
-      body {
-        margin: 140px 15px 40px;
-      }
+    .ad-placeholder {
+      margin: 40px 0;
+      padding: 16px;
+      border: 2px dashed var(--gray);
+      border-radius: var(--radius);
+      text-align: center;
+      color: var(--gray);
+      font-weight: 600;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        padding: 20px;
+        gap: 10px;
       }
-      nav a {
-        margin-left: 0;
+      nav {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      body {
+        margin-top: 140px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p, li {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-<header>
+
+<header id="site-header">
   <div class="logo">WealthFlow</div>
   <nav>
     <a href="index.html">Home</a>
@@ -140,22 +148,61 @@
     <a href="about.html">About</a>
   </nav>
 </header>
+
 <main>
-  <h1>How to Improve Your Credit Card Usage Responsibly</h1>
-  <img src="images/image9.jpg" alt="Credit card usage" />
-  <p>Credit cards are powerful financial tools if used responsibly. Here’s how to manage them to avoid debt and build credit.</p>
-  <h2>Pay Your Balance in Full</h2>
-  <p>Avoid interest by paying off your balance every month.</p>
-  <h2>Keep Utilization Low</h2>
-  <p>Use less than 30% of your credit limit to maintain a good credit score.</p>
-  <h2>Use Rewards Wisely</h2>
-  <p>Take advantage of cashback and points but avoid unnecessary spending.</p>
-  <h2>Monitor Your Statements</h2>
-  <p>Check for unauthorized charges and report them immediately.</p>
-  <h2>Don’t Open Too Many Accounts</h2>
-  <p>Too many credit applications can lower your score.</p>
-  <p>Responsible credit card use can improve your financial health and creditworthiness.</p>
+  <h1>Beginner’s Guide to Investing: How to Get Started in 2025</h1>
+
+  <p>Investing is one of the most powerful ways to build wealth over time, but starting can feel overwhelming. This guide breaks down the essentials to help beginners confidently take their first steps into investing.</p>
+
+  <h2>Why Invest?</h2>
+  <p>Simply saving money isn’t enough to beat inflation and grow your wealth. Investing your money in stocks, bonds, or funds can generate higher returns and help secure your financial future.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post9-1">Google Ad Placeholder - Top of Post 9</div>
+
+  <h2>Step 1: Define Your Goals and Timeline</h2>
+  <p>Are you investing for retirement, a house down payment, or another goal? Your time horizon will influence what types of investments are suitable.</p>
+
+  <h2>Step 2: Understand Risk and Diversification</h2>
+  <p>All investments carry risk. Diversifying across asset classes and sectors reduces risk and improves potential returns.</p>
+
+  <h2>Step 3: Learn Basic Investment Types</h2>
+  <ul>
+    <li><strong>Stocks:</strong> Shares in companies with growth potential but higher volatility.</li>
+    <li><strong>Bonds:</strong> Loans to governments or companies, usually lower risk with fixed returns.</li>
+    <li><strong>Mutual Funds/ETFs:</strong> Pooled investments offering diversification.</li>
+  </ul>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post9-2">Google Ad Placeholder - Mid Post 9</div>
+
+  <h2>Step 4: Choose a Brokerage Account</h2>
+  <p>Select a user-friendly brokerage with low fees. Many platforms offer commission-free trades and educational resources for beginners.</p>
+
+  <h2>Step 5: Start Small and Be Consistent</h2>
+  <p>You don’t need thousands to start—many brokerages allow fractional shares. Regular contributions, even small ones, add up over time.</p>
+
+  <h2>Step 6: Monitor and Adjust</h2>
+  <p>Check your portfolio periodically and rebalance to maintain your target allocation.</p>
+
+  <p>Investing wisely requires patience and discipline, but the earlier you start, the more you benefit from compounding growth.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post9-3">Google Ad Placeholder - Bottom of Post 9</div>
 </main>
-<footer>© 2025 WealthFlow. All rights reserved.</footer>
+
+<script>
+  const header = document.getElementById('site-header');
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      header.style.transform = 'translateY(0)';
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
 </body>
 </html>
