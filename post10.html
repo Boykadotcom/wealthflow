@@ -6,7 +6,7 @@
   <title>The Ultimate Guide to Paying Off Debt Fast and Smart - WealthFlow</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* Same styling */
+    /* Same styling as previous posts */
     :root {
       --bg: #f4f6f8;
       --text: #1f2937;
@@ -72,4 +72,134 @@
       width: 100%;
     }
     main {
-      margin-top: 
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 1.75rem;
+      color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1.1rem;
+      color: var(--text);
+      margin-bottom: 18px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 18px;
+      color: var(--text);
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .ad-placeholder {
+      margin: 40px 0;
+      padding: 16px;
+      border: 2px dashed var(--gray);
+      border-radius: var(--radius);
+      text-align: center;
+      color: var(--gray);
+      font-weight: 600;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      body {
+        margin-top: 140px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p, li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="logo">WealthFlow</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog-overview.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+  <h1>The Ultimate Guide to Paying Off Debt Fast and Smart</h1>
+
+  <p>Carrying debt can weigh heavily on your financial and mental well-being. The good news? With a smart strategy and commitment, you can pay it off faster and gain freedom.</p>
+
+  <h2>Step 1: List All Your Debts</h2>
+  <p>Gather details on each debt: balance, interest rate, minimum payment, and due dates. This clarity is your starting point.</p>
+
+  <h2>Step 2: Choose a Repayment Strategy</h2>
+  <p>Two popular methods are:</p>
+  <ul>
+    <li><strong>Debt Snowball:</strong> Pay off the smallest balance first for quick wins, then roll that payment to the next debt.</li>
+    <li><strong>Debt Avalanche:</strong> Focus on the highest interest rate debt first to minimize total interest paid.</li>
+  </ul>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post10-1">Google Ad Placeholder - Top of Post 10</div>
+
+  <h2>Step 3: Cut Expenses and Increase Income</h2>
+  <p>Redirect any extra cash from budgeting, side gigs, or bonuses toward debt payments. Even small additional payments accelerate payoff.</p>
+
+  <h2>Step 4: Automate Payments</h2>
+  <p>Set up automatic minimum payments to avoid late fees and allocate extra funds manually as you can.</p>
+
+  <h2>Step 5: Avoid New Debt</h2>
+  <p>While paying off old debt, resist the temptation to accumulate new balances. Consider freezing credit cards or using cash envelopes.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post10-2">Google Ad Placeholder - Mid Post 10</div>
+
+  <h2>Step 6: Celebrate Milestones</h2>
+  <p>Reward yourself with low-cost treats as you clear debts. This keeps motivation high during your journey.</p>
+
+  <p>Debt payoff is a marathon, not a sprint. Stay consistent, adjust as needed, and visualize the financial freedom ahead.</p>
+
+  <!-- Ad placeholder -->
+  <div class="ad-placeholder" id="ad-post10-3">Google Ad Placeholder - Bottom of Post 10</div>
+</main>
+
+<script>
+  const header = document.getElementById('site-header');
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      header.style.transform = 'translateY(0)';
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
+</body>
+</html>
